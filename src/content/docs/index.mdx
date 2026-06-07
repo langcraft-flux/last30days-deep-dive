@@ -1,0 +1,46 @@
+---
+title: Last30Days Skill — Deep Dive
+description: A 10-chapter technical deep dive into Matt Van Horn's Last30Days skill.
+template: splash
+hero:
+  tagline: A source-backed tour of how Last30Days turns a long SKILL.md contract and a Python engine into a multi-source research system.
+  actions:
+    - text: Start Reading
+      link: /last30days-deep-dive/intro/
+      icon: right-arrow
+      variant: primary
+    - text: Source Repo
+      link: https://github.com/mvanhorn/last30days-skill
+      icon: external
+      variant: minimal
+---
+
+import ChapterCard from '../../components/ChapterCard.astro';
+
+## 10 Chapters
+
+<div class="chapter-grid">
+  <ChapterCard title="1. Product Thesis & Surface Area" icon="🧭" href="/last30days-deep-dive/chapters/01-product-thesis-and-surface-area/" description="What the skill is actually building: a social-relevance search engine wrapped as an agent skill." />
+  <ChapterCard title="2. SKILL.md as Control Plane" icon="📜" href="/last30days-deep-dive/chapters/02-skill-contract-and-control-plane/" description="Why a giant instruction file is not an accident here, and how it coordinates the host model." />
+  <ChapterCard title="3. CLI Entry Point & Runtime" icon="🐍" href="/last30days-deep-dive/chapters/03-cli-entry-point-and-runtime/" description="The thin Python CLI, process cleanup, parser surface, and execution boundaries." />
+  <ChapterCard title="4. Query Planning & Topic Resolution" icon="🧠" href="/last30days-deep-dive/chapters/04-query-planning-and-topic-resolution/" description="How Last30Days decides where to search before it searches." />
+  <ChapterCard title="5. Source Adapters & Auth Model" icon="🔌" href="/last30days-deep-dive/chapters/05-source-adapters-and-auth-model/" description="Reddit, X, YouTube, web search, GitHub, and the BYO-credentials design." />
+  <ChapterCard title="6. Ranking, Clustering & Fusion" icon="⚖️" href="/last30days-deep-dive/chapters/06-ranking-clustering-and-fusion/" description="Weighted RRF, reranking, per-author caps, entity-aware clustering, and cross-source story merging." />
+  <ChapterCard title="7. Rendering & Shareable HTML" icon="🧾" href="/last30days-deep-dive/chapters/07-rendering-and-shareable-html/" description="How the engine emits a strict model-facing envelope and a separate polished HTML artifact." />
+  <ChapterCard title="8. Watchlists, Storage & Briefings" icon="🗃️" href="/last30days-deep-dive/chapters/08-watchlists-storage-and-briefings/" description="SQLite persistence, delta tracking, scheduled topics, and daily/weekly briefings." />
+  <ChapterCard title="9. Testing & Release Discipline" icon="🧪" href="/last30days-deep-dive/chapters/09-testing-and-release-discipline/" description="What 90+ test files and release docs say about how the project is run." />
+  <ChapterCard title="10. Why the Design Works" icon="🏗️" href="/last30days-deep-dive/chapters/10-why-the-design-works/" description="The bigger pattern: one skill, one engine, many sources, and very explicit guardrails." />
+</div>
+
+<style>{`
+  .chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+`}</style>
+
+---
+
+Built by [LangCraft](https://langcraft.com) · Source analysis based on `mvanhorn/last30days-skill` v3.3.2
