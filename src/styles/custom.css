@@ -1,21 +1,81 @@
 /* LangCraft brand colours */
 :root {
-  --sl-color-accent-low: #1a1f3a;
-  --sl-color-accent: #4f6ef7;
-  --sl-color-accent-high: #a5b4fc;
+  --sl-font-system: 'Inter', system-ui, sans-serif;
+
+  /* Default to the dark palette until a theme is chosen. */
+  --sl-color-accent-low: #1e2347;
+  --sl-color-accent: #6d85f8;
+  --sl-color-accent-high: #c7d2fe;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #f0f2ff;
-  --sl-color-gray-6: #1a1f3a;
-  --sl-font-system: 'Inter', system-ui, sans-serif;
+  --sl-color-gray-2: #c9d1ea;
+  --sl-color-gray-3: #9aa6c7;
+  --sl-color-gray-4: #66718f;
+  --sl-color-gray-5: #2a3146;
+  --sl-color-gray-6: #131620;
+  --sl-color-black: #0f1118;
+  --sl-color-text: var(--sl-color-gray-2);
+  --sl-color-text-accent: var(--sl-color-accent-high);
+  --sl-color-text-invert: var(--sl-color-accent-low);
+  --sl-color-bg: #0f1118;
+  --sl-color-bg-nav: #131620;
+  --sl-color-bg-sidebar: #131620;
+  --sl-color-bg-inline-code: #2a3146;
+  --sl-color-bg-accent: var(--sl-color-accent-high);
+  --sl-color-hairline-light: #2a3146;
+  --sl-color-hairline: #131620;
+  --sl-color-hairline-shade: #0f1118;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #e7ecff;
+  --sl-color-accent: #4f6ef7;
+  --sl-color-accent-high: #2137a5;
+  --sl-color-white: #141826;
+  --sl-color-gray-1: #242b3d;
+  --sl-color-gray-2: #3b465f;
+  --sl-color-gray-3: #5f6b87;
+  --sl-color-gray-4: #8a96b1;
+  --sl-color-gray-5: #d6dcef;
+  --sl-color-gray-6: #eef2fb;
+  --sl-color-gray-7: #f8faff;
+  --sl-color-black: #ffffff;
+  --sl-color-text: var(--sl-color-gray-2);
+  --sl-color-text-accent: var(--sl-color-accent);
+  --sl-color-text-invert: var(--sl-color-black);
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: #f8faff;
+  --sl-color-bg-sidebar: #ffffff;
+  --sl-color-bg-inline-code: #eef2fb;
+  --sl-color-bg-accent: var(--sl-color-accent);
+  --sl-color-hairline-light: #eef2fb;
+  --sl-color-hairline: #eef2fb;
+  --sl-color-hairline-shade: #eef2fb;
 }
 
 :root[data-theme='dark'] {
   --sl-color-accent-low: #1e2347;
   --sl-color-accent: #6d85f8;
   --sl-color-accent-high: #c7d2fe;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #f0f2ff;
+  --sl-color-gray-2: #c9d1ea;
+  --sl-color-gray-3: #9aa6c7;
+  --sl-color-gray-4: #66718f;
+  --sl-color-gray-5: #2a3146;
+  --sl-color-gray-6: #131620;
+  --sl-color-black: #0f1118;
+  --sl-color-text: var(--sl-color-gray-2);
+  --sl-color-text-accent: var(--sl-color-accent-high);
+  --sl-color-text-invert: var(--sl-color-accent-low);
   --sl-color-bg: #0f1118;
   --sl-color-bg-nav: #131620;
   --sl-color-bg-sidebar: #131620;
+  --sl-color-bg-inline-code: #2a3146;
+  --sl-color-bg-accent: var(--sl-color-accent-high);
+  --sl-color-hairline-light: #2a3146;
+  --sl-color-hairline: #131620;
+  --sl-color-hairline-shade: #0f1118;
 }
 
 /* Tighten up headings */
